@@ -1,0 +1,30 @@
+000100190619     A                                      DSPSIZ(24 80 *DS3)
+000101190619     A          R RECORD1                   CF03(03 'Exit')
+000102190619     A                                      CF21(21 'QUSCMDLN')
+000103190619     A                                  1 38'Lab 4'
+000104190619     A                                  5  3'Please select one of the following-
+000105190619     A                                       options:'
+000106190619     A                                  8 14'2.  Maximum Invalid Signon Attempt-
+000107190619     A                                      s allowed'
+000108190619     A                                  7 14'1.  Run Instructor''s Tickets Prog-
+000109190619     A                                      ram'
+000110190619     A                                  9 14'3.  Signed on User''s Message Queu-
+000111190619     A                                      e'
+000112190619     A                                 14 17'Option:'
+000113190619     A            OPTION         2A  B 14 25
+000114190619     A  30                                  DSPATR(RI)
+000115190619     A  30                                  DSPATR(PC)
+000116190619     A  30                             14 29'A valid option must be entered'
+000120190619     A            MSGTXT        70   O 18  6
+000123190619     A                                 23  4'F3=Exit'
+000124190619     A                                 23 17'F21=Comand Line '
+000125190619     A                                  1  3'XIN SONG ZHANG'
+000126190619     A*                                  2  3'Your Full Name Above'
+000127190619     A                                 10 14'4.  Initial number of active jobs -
+000128190619     A                                      for storage allocation'
+000129190619     A                                 11 14'5.  Previous sign on by signed on -
+000130190619     A                                      user'
+000131190619     A                                  1 71DATE EDTCDE(Y)
+000132190619     A                                  2 71TIME
+000133190619
+000134190619

@@ -1,0 +1,29 @@
+000100190812             PGM
+000101190812
+000102190812             DCL        &OUTQ *CHAR 10
+000103190812             DCL        &OUTQLIB *CHAR 10
+000104190812             DCL        &SHIFT *CHAR 1
+000105190812             DCL        &SHIFTTYPE *CHAR 30
+000106190812
+000107190812
+000108190812             RTVUSRPRF  OUTQ(&OUTQ) OUTQLIB(&OUTQLIB)
+000109190812             CLROUTQ    OUTQ(&OUTQLIB/&OUTQ)
+000110190812
+000111190812             MONMSG     MSGID(CPF0000)
+000112190812
+000113190812
+000114190812             SNDUSRMSG  MSG('1- Day Shift, 2- Night Shift, 3- Afternoon Shift, 4- All Shifts, +
+000115190812                          5- Exit') MSGRPY(&SHIFT)
+000116190812
+000117190812             SNDUSRMSG  MSG(&SHIFT *CAT &OUTQ *CAT &OUTQLIB)
+000118190812/*                                                                                                */
+000119190812/*              SNDUSRMSG  MSG(&OUTQ)                                                             */
+000120190812/*              SNDUSRMSG  MSG(&OUTQLIB)                                                          */
+000121190812
+000122190812
+000123190812
+000124190812             ENDPGM
+000125190812
+000126190812
+000127190812
+000128190812
